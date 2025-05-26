@@ -10,7 +10,5 @@ module.exports = defineConfig({
       openMode: 2,
       runMode: 3
     },
-    viewportWidth: 300,
-    viewportHeight: 600
   },
 });
