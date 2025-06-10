@@ -2,13 +2,11 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-
-    retries:{
-      openMode: 2,
-      runMode: 3
-    },
+    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/'
   },
+
+  env:{
+    TEST_USER_EMAIL: 'olga.borysiuk2012+0101@gmail.com',
+    TEST_USER_PASSWORD: 'Password1234',
+  }
 });
