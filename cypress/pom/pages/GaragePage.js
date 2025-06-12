@@ -27,6 +27,10 @@ class GaragePage {
     return cy.get("tr td:nth-child(4)");
   }
 
+  get profilePage() {
+    return cy.get('[routerlink="profile"]');
+  }
+
   openAddACarForm() {
     this.addNewCarButton.click();
   }
@@ -37,6 +41,10 @@ class GaragePage {
 
   openAddAnExpenseForm() {
     this.addFuelExpenseButton.first().click();
+  }
+
+  openProfilePage() {
+    this.profilePage.click();
   }
 
   verifyFuelExpenses(carName, mileage, liters, cost) {
